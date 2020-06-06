@@ -1,4 +1,4 @@
-package tree;
+package com.orange.leetcode.tree;
 
 public class TreeNode {
     int val;

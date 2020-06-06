@@ -1,4 +1,4 @@
-package tree;
+package com.orange.leetcode.tree;
 
 import javafx.util.Pair;
 
@@ -78,16 +78,16 @@ public class MaxDepthOfBinaryTree {
         return depth;
     }
 
-    public void main(String[] args) {
+    public static void main(String[] args) {
         MaxDepthOfBinaryTree maxDepthOfBinaryTree = new MaxDepthOfBinaryTree();
         TreeNode root = new TreeNode(0);
         //……
+
 
         maxDepthOfBinaryTree.maxDepth_recursion(root);
         maxDepthOfBinaryTree.maxDepth_iterator_bfs(root);
         maxDepthOfBinaryTree.maxDepth_iterator_dfs(root);
 
     }
-
 
 }
