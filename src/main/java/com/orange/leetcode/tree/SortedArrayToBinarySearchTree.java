@@ -1,7 +1,15 @@
 package com.orange.leetcode.tree;
 
 /**
- * 有序数组转二叉搜索树
+ * <b>有序数组转二叉搜索树</b>
+ * <a>https://leetcode-cn.com/problems/convert-sorted-array-to-binary-search-tree/</a>
+ *
+ * 思路：
+ *
+ *
+ * 边界：
+ *
+ *
  */
 public class SortedArrayToBinarySearchTree {
     public TreeNode sortedArrayToBST(int[] nums) {
