@@ -1,4 +1,4 @@
-# 有序数组转二叉搜索树
+# 有序数组转二叉搜索树【简单】
  <https://leetcode-cn.com/problems/convert-sorted-array-to-binary-search-tree/>
  
  ## 知识点
@@ -12,7 +12,7 @@
     - 根节点：子数组的中间节点，rootIndex = left + (right-left)/2 。
     - 左子节点：left=left，right=rootIndex-1;
     - 右子节点：left=rootIndex + 1，right=right;
- 4. 结束条件：left < right，方法内先判断，不符合直接return null；
+ 4. 结束条件：right < left，方法内先判断，不符合直接return null；
   
 ## 边界
 
@@ -21,8 +21,8 @@
 
  
 **Complexity Anlysis**
- - 时间：
- - 空间：
+ - 时间：O(n)
+ - 空间：O(logn)
 
 ## 其他
 该题答案不唯一
