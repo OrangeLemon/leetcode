@@ -1,28 +1,20 @@
 package com.orange.leetcode.tree;
 
 /**
- * <b>有序数组转二叉搜索树</b>
- * <a>https://leetcode-cn.com/problems/convert-sorted-array-to-binary-search-tree/</a>
- *
- * 思路：
- *
- *
- * 边界：
- *
- *
+ * 有序数组转二叉搜索树
  */
 public class SortedArrayToBinarySearchTree {
     public TreeNode sortedArrayToBST(int[] nums) {
         return arrayToBST(0, nums.length -1 , nums);
     }
 
-    public TreeNode arrayToBST(int from, int to, int[] nums) {
-        if(to < from) return null;
+    public TreeNode arrayToBST(int left, int right, int[] nums) {
+        if(right < left) return null;
 
-        int rootIndex = ((to - from) / 2) + from;
+        int rootIndex = ((right - left) / 2) + left;
         TreeNode root = new TreeNode(nums[rootIndex]);
-        root.left = arrayToBST(from, rootIndex - 1, nums);
-        root.right = arrayToBST(rootIndex + 1, to, nums);
+        root.left = arrayToBST(left, rootIndex - 1, nums);
+        root.right = arrayToBST(rootIndex + 1, right, nums);
         return root;
     }
 
