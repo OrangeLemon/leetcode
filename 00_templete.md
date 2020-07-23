@@ -1,4 +1,4 @@
-#标题
+#标题【难度】
 <http:leetCodexxx.com>
 
 ##知识点

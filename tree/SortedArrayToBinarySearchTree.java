@@ -1,4 +1,4 @@
-package com.orange.leetcode.tree;
+package tree;
 
 /**
  * 有序数组转二叉搜索树

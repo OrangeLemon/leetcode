@@ -9,10 +9,10 @@
 1. 中序遍历逆过程。
 2. 递归实现，求每一个节点的左子节点&右子节点，返回根节点。
 3. 算法描述：
-    - 根节点：子数组的中间节点，rootIndex = left + (right-left)/2 。
+    - 根节点：子数组的中间节点，rootIndex = left + (right-left)/2 ;
     - 左子节点：left=left，right=rootIndex-1;
     - 右子节点：left=rootIndex + 1，right=right;
- 4. 结束条件：right < left，方法内先判断，不符合直接return null；
+ 4. 结束条件：right < left，方法内先判断，不符合直接return null;
   
 ## 边界
 
