@@ -1,5 +1,5 @@
 # 有序数组转二叉搜索树【简单】
- <https://leetcode-cn.com/problems/convert-sorted-array-to-binary-search-tree/>
+ <https://leetcode-cn.com/problems/convert-sorted-_01_array-to-binary-search-_02_tree/>
  
  ## 知识点
  - 有序数组：[1,2,3,4,5]

@@ -1,5 +1,5 @@
 # 二叉树的最大深度【简单】
-<https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/>
+<https://leetcode-cn.com/problems/maximum-depth-of-binary-_02_tree/>
 
 ##知识点
 - root不为null深度为1，否则为0，多一个子节点深度+1。
