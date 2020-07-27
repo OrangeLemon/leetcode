@@ -1,8 +1,13 @@
-package _02_tree;
+package _02_tree._236_二叉树最近公共祖先;
+
+import _02_tree.TreeNode;
+import _02_tree.TreeUtils;
 
 import java.util.ArrayList;
 
 public class LowestCommonAncestor {
+
+    //解法一：分别查找祖先，比较数组，获取最后一个相同的祖先节点
     public static TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
         if (null == root || null == p || null == q) {
             return null;
@@ -45,6 +50,21 @@ public class LowestCommonAncestor {
         //剪枝
         array.remove(array.size() - 1);
         return false;
+    }
+
+    //方法二：递归查找
+    public TreeNode lowestCommonAncestor_v2(TreeNode root, TreeNode p, TreeNode q) {
+        if(root == null) return null;
+        if(root.val == p.val || root.val == q.val) return root;
+        TreeNode l = lowestCommonAncestor_v2(root.left, p, q);
+        TreeNode r = lowestCommonAncestor_v2(root.right, p, q);
+        if(l != null && r != null)
+            return root;
+        if(l == null) return r;
+        if(r == null) return l;
+
+        return null;
+
     }
 
     public static void main(String[] args) {
