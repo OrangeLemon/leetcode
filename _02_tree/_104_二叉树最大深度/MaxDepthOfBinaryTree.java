@@ -85,9 +85,11 @@ public class MaxDepthOfBinaryTree {
         //……
 
 
-        maxDepthOfBinaryTree.maxDepth_recursion(root);
-        maxDepthOfBinaryTree.maxDepth_iterator_bfs(root);
-        maxDepthOfBinaryTree.maxDepth_iterator_dfs(root);
+        int result1 = maxDepthOfBinaryTree.maxDepth_recursion(root);
+        int result2 = maxDepthOfBinaryTree.maxDepth_iterator_bfs(root);
+        int result3 = maxDepthOfBinaryTree.maxDepth_iterator_dfs(root);
+
+        System.out.println(result1 + "&" + result2 + "&" + result3);
 
     }
 
