@@ -1,6 +1,6 @@
-package _02_tree._104_二叉树最大深度;
+package _03_tree._104_二叉树最大深度;
 
-import _02_tree.TreeNode;
+import _03_tree.TreeNode;
 import javafx.util.Pair;
 
 import java.util.LinkedList;

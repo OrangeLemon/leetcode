@@ -1,6 +1,6 @@
-package _02_tree._235_二叉搜索树最近公共祖先;
+package _03_tree._235_二叉搜索树最近公共祖先;
 
-import _02_tree.TreeNode;
+import _03_tree.TreeNode;
 
 public class LowestCommonAncestorOfSBT {
 

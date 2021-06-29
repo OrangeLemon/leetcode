@@ -1,6 +1,6 @@
-package _02_tree._94_二叉树的中序遍历;
+package _03_tree._94_二叉树的中序遍历;
 
-import _02_tree.TreeNode;
+import _03_tree.TreeNode;
 
 import java.util.ArrayList;
 import java.util.Collections;

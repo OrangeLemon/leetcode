@@ -1,6 +1,6 @@
-package _02_tree._101_对称二叉树;
+package _03_tree._101_对称二叉树;
 
-import _02_tree.TreeNode;
+import _03_tree.TreeNode;
 
 public class SymmetricTree {
     public boolean isSymmetric(TreeNode root) {

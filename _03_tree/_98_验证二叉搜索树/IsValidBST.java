@@ -1,6 +1,6 @@
-package _02_tree._98_验证二叉搜索树;
+package _03_tree._98_验证二叉搜索树;
 
-import _02_tree.TreeNode;
+import _03_tree.TreeNode;
 
 import java.util.ArrayList;
 import java.util.Collections;

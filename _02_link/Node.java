@@ -1,29 +1,29 @@
-package _01_array;
+package _02_link;
 
-public class ListNode {
+public class Node {
     public int val;
-    public ListNode next;
+    public Node next;
 
-    public ListNode(int x) {
+    public Node(int x) {
         val = x;
     }
 
 
-    public static ListNode init(int[] arr) {
+    public static Node init(int[] arr) {
         if (null == arr || arr.length == 0) {
             return null;
         }
-        ListNode head = new ListNode(arr[0]);
-        ListNode cur = head;
+        Node head = new Node(arr[0]);
+        Node cur = head;
         for (int i = 1; i < arr.length; i++) {
-            cur.next = new ListNode(arr[i]);
+            cur.next = new Node(arr[i]);
             cur = cur.next;
         }
         return head;
     }
 
-    public static void print(ListNode node) {
-        ListNode cur = node;
+    public static void print(Node node) {
+        Node cur = node;
         while(cur != null) {
             System.out.println(cur.val + ",");
             cur = cur.next;

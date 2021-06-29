@@ -1,7 +1,7 @@
-package _02_tree._236_二叉树最近公共祖先;
+package _03_tree._236_二叉树最近公共祖先;
 
-import _02_tree.TreeNode;
-import _02_tree.TreeUtils;
+import _03_tree.TreeNode;
+import _03_tree.TreeUtils;
 
 import java.util.ArrayList;
 
