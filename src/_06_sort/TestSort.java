@@ -10,9 +10,9 @@ import java.util.Random;
 public class TestSort {
 
     public static void main(String[] args) {
-//        bubbling(getArr(10000));
-//        insertSort(getArr(10000));
-        int [] arr = {1906, 5969, 243, 8255, 3479};
+        bubbling(getArr(10000));
+        insertSort(getArr(10000));
+        int [] arr = getArr(10000);
         System.out.println("变更前" + Arrays.toString(arr));
         long start = System.currentTimeMillis();
         mergeSort(arr, 0, arr.length -1);
@@ -86,8 +86,8 @@ public class TestSort {
         while (start <= end) {
             tempArr[k++] = arr[start++];
         }
-        for (int m = 0; m < tempArr.length; i++) {
-            arr[startIndex++] = tempArr[m++];
+        for (int m = 0; m < tempArr.length; m++) {
+            arr[startIndex++] = tempArr[m];
         }
     }
 
