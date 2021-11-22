@@ -12,11 +12,8 @@ public class TestSort {
     public static void main(String[] args) {
         bubbling(getArr(10000));
         insertSort(getArr(10000));
-        int [] arr = getArr(10000);
-        System.out.println("变更前" + Arrays.toString(arr));
-        long start = System.currentTimeMillis();
-        mergeSort(arr, 0, arr.length -1);
-        System.out.println("cost:" + (System.currentTimeMillis() - start) + "ms,mergeSort:" + Arrays.toString(arr));
+        mergeSort(getArr(10000));
+        quickSort(getArr(10000));
     }
 
     private static int[] getArr(int length) {
@@ -61,6 +58,11 @@ public class TestSort {
     }
 
 
+    private static void mergeSort(int[] arr) {
+        long start = System.currentTimeMillis();
+        mergeSort(arr, 0, arr.length - 1);
+        System.out.println("cost:" + (System.currentTimeMillis() - start) + "ms,mergeSort:" + Arrays.toString(arr));
+    }
     private static void mergeSort(int[] arr, int startIndex, int endIndex) {
         if(startIndex >= endIndex) {
             return;
@@ -91,12 +93,40 @@ public class TestSort {
         }
     }
 
-
     private static void quickSort(int[] arr) {
         long start = System.currentTimeMillis();
-        //TODO
+        quickSort(arr, 0, arr.length - 1);
         System.out.println("cost:" + (System.currentTimeMillis() - start) + "ms,quickSort:" + Arrays.toString(arr));
     }
+
+    private static void quickSort(int[] arr, int startIndex, int endIndex) {
+        if (startIndex >= endIndex) {
+            return;
+        }
+        int pivot = getPivot(arr, startIndex, endIndex);
+        quickSort(arr, startIndex, pivot - 1);
+        quickSort(arr, pivot + 1, endIndex);
+    }
+
+    private static int getPivot(int[] arr, int startIndex, int endIndex) {
+        int i = startIndex, j = startIndex;
+        int value = arr[endIndex];
+        for(;j<endIndex;j++) {
+            if(arr[j]<value){
+                swap(arr, i, j);
+                i++;
+            }
+        }
+        swap(arr, i, endIndex);
+        return i;
+    }
+
+    private static void swap(int[] arr, int i, int j) {
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+    }
+
 
 
 }
